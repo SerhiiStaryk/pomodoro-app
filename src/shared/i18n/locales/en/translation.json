@@ -1,0 +1,141 @@
+{
+  "app": {
+    "header": {
+      "title": "Pomodoro Timer",
+      "tagline": "Stay focused, take breaks, achieve more"
+    },
+    "footer": {
+      "builtWith": "Built with ⚛️ React + TypeScript + Vite"
+    },
+    "documentTitle": {
+      "running": "{{emoji}} {{time}} - Pomodoro",
+      "idle": "Pomodoro Timer"
+    },
+    "info": {
+      "buttonAria": "How to use Pomodoro and this app",
+      "buttonTitle": "How to use Pomodoro"
+    },
+    "modal": {
+      "title": "How to use Pomodoro (and this app)",
+      "close": "Close",
+      "sections": {
+        "basics": "Pomodoro technique basics",
+        "app": "How to use this Pomodo app",
+        "tips": "Practical tips"
+      },
+      "basicsItems": [
+        "Pick one task and write the next tiny step.",
+        "Work for 25 minutes with zero distractions.",
+        "Take a 5 minute break (stand up, water, stretch).",
+        "After 4 work sessions, take a longer break (15–30 minutes).",
+        "During focus time, defer interruptions: jot them down and return later."
+      ],
+      "appItems": [
+        "Press Start to begin; use Pause/Resume anytime.",
+        "Use Skip to move to the next phase if needed (e.g. emergency break).",
+        "Open Settings (⚙️) to tune durations and auto-start behavior.",
+        "Use the Work/Short Break/Long Break buttons to choose a phase (disabled while running).",
+        "Check Today’s Progress to see how many sessions you completed and total minutes."
+      ],
+      "tipsItems": [
+        "Plan 3–6 sessions for the day and stop when done.",
+        "Keep breaks restorative: avoid scrolling and email.",
+        "If 25 minutes is too long, start with 15 and build up."
+      ]
+    }
+  },
+  "controls": {
+    "pause": "Pause",
+    "resume": "Resume",
+    "start": "Start",
+    "reset": "Reset",
+    "skip": "Skip",
+    "phase": {
+      "work": "Work",
+      "shortBreak": "Short Break",
+      "longBreak": "Long Break"
+    }
+  },
+  "timer": {
+    "phase": {
+      "work": "Focus Time",
+      "shortBreak": "Short Break",
+      "longBreak": "Long Break"
+    },
+    "sessionsCompleted": "Sessions completed:"
+  },
+  "settings": {
+    "toggle": "⚙️ Settings",
+    "title": "Settings",
+    "profilesTitle": "Profiles",
+    "profileLabel": "Profile",
+    "newProfilePlaceholder": "New profile name…",
+    "newProfileAria": "New profile name",
+    "createProfile": "Create",
+    "renameProfile": "Rename",
+    "renameProfileAria": "Rename profile",
+    "deleteProfile": "Delete",
+    "activeProfileNote": "Active profile: {{name}}",
+    "durationsTitle": "Durations (minutes)",
+    "workSession": "Work Session",
+    "shortBreak": "Short Break",
+    "longBreak": "Long Break",
+    "sessionsUntilLongBreak": "Sessions until long break",
+    "autoStartTitle": "Auto-start",
+    "autoStartBreaks": "Auto-start breaks",
+    "autoStartWork": "Auto-start work sessions",
+    "resetDefaults": "Reset to Defaults",
+    "toggleAria": "Toggle settings"
+  },
+  "history": {
+    "title": "📈 Today’s Progress",
+    "clearAll": "Clear All",
+    "stats": {
+      "sessions": "Sessions",
+      "minutes": "Minutes"
+    },
+    "empty": "No sessions completed yet. Start your first Pomodoro! 🚀",
+    "phase": {
+      "work": "Work",
+      "shortBreak": "Short Break",
+      "longBreak": "Long Break"
+    }
+  },
+  "theme": {
+    "toggleAria": "Toggle theme"
+  },
+  "language": {
+    "toggleAria": "Switch language"
+  },
+  "tasks": {
+    "title": "✅ Tasks",
+    "meta": "{{completed}}/{{total}} done",
+    "placeholder": "Add a task…",
+    "inputAria": "Task text",
+    "add": "Add",
+    "empty": "No tasks yet. Add your next small step.",
+    "delete": "Delete",
+    "toggleAria": "Toggle task: {{text}}",
+    "deleteAria": "Delete task: {{text}}"
+  },
+  "nav": {
+    "aria": "Page navigation",
+    "home": "Home",
+    "analytics": "Analytics"
+  },
+  "analytics": {
+    "documentTitle": "📊 Analytics - Pomodoro",
+    "title": "📊 Charts & Analytics",
+    "subtitle": "Last 7 days (work sessions)",
+    "empty": "No session data yet. Complete a work session to see charts.",
+    "kpis": {
+      "workSessions": "Work sessions",
+      "focusMinutes": "Focus minutes",
+      "avgPerDay": "Avg minutes/day"
+    },
+    "charts": {
+      "focusMinutes": "Focus minutes per day",
+      "workSessions": "Work sessions per day"
+    }
+  }
+}

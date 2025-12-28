@@ -1,0 +1,38 @@
+.toggle {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 50%;
+  background: var(--card-bg);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.toggle:hover {
+  transform: scale(1.1) rotate(20deg);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.toggle:active {
+  transform: scale(0.95) rotate(20deg);
+}
+
+@media (max-width: 768px) {
+  .toggle {
+    top: 1rem;
+    right: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+  }
+}

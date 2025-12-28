@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // GitHub Pages SPA deep-link support (keeps BrowserRouter working on refresh).
+      // If redirected from 404.html, restore the intended route.
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        var redirectPath = params.get('p');
+        if (!redirectPath) return;
+
+        params.delete('p');
+        var search = params.get('s');
+        var hash = params.get('h');
+        if (search) params.delete('s');
+        if (hash) params.delete('h');
+
+        var base = '%BASE_URL%';
+        var baseNoTrail = base === '/' ? '' : base.replace(/\/$/, '');
+        var target = baseNoTrail + redirectPath;
+        if (search) target += '?' + decodeURIComponent(search);
+        if (hash) target += '#' + decodeURIComponent(hash);
+
+        window.history.replaceState(null, '', target);
+      })();
+    </script>
+
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="%BASE_URL%favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="%BASE_URL%favicon-16x16.png"
+    />
+    <link rel="apple-touch-icon" href="%BASE_URL%apple-touch-icon.png" />
+    <link rel="manifest" href="%BASE_URL%manifest.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A modern Pomodoro timer for focused working and productivity"
+    />
+    <title>Pomodoro Timer</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="%BASE_URL%src/main.tsx"></script>
+  </body>
+</html>
